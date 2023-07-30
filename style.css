@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*customstyle for components*/
+
+header, .proyectos, .contactos, footer {
+    padding: 20px;
+}
+
+button {
+    background: transparent;
+    border: 1px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+label, input, text area, button {
+    display: block;
+}
+
+
+/*estilos diferenciados*/
+
+header {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.inp {
+    display: flex;
+    gap: 10px;
+}
+
+header ul li {
+    cursor: pointer
+}
+
+header ul li:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+header input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+header img {
+    width: 10%;
+}
+main{
+    background-color: rgb(215, 248, 253);
+}
+main .banner {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    filter: grayscale(1);
+    background-image: url("https://w0.peakpx.com/wallpaper/492/652/HD-wallpaper-lines-of-html-codes.jpg")
+    
+}
+
+.proyects {
+    text-align: center;
+}
+.proyects h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    width: 310 px;
+    justify-self: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgb(231, 247, 248);
+
+}
+
+.card:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+
+ .cont-buttons, .b-1, .b-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.b-1, .b-2{
+    background-color: transparent;
+}
+
+.b-1:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+ .b-2:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+
+.card img{
+    width: 70%;
+}
+
+.card h3, .card p, .card img {
+    padding-bottom: 10px;
+}
+
+.cont-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.contact form {
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.contact form * {
+    width: 100%;
+    margin: 5px 0px;
+} 
+
+.contact form button {
+    width: auto;
+}
+
+.contact input, .contact form text area {
+    background-color: white;
+    border: gray;
+    padding: 5px 10px;
+    norder border-radius: 5px;
+}
+
+
+/*footer*/
+
+.cont-footer {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+
+
+.cont-footer div {
+    width: 150px;
+}
+
+.cont-footer h5 {
+    padding: 10px;
+    
+}
+
+
+footer .copyright{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+/*customstyle for components*/
+
+/*responsive*/
+
+@media (max-width:880px){
+    .cont-card {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cont-footer{
+        flex-direction: column;
+    }
+
+    .cont-footer div{
+        width: 10%;
+        text-align: center;
+    }
+}
+
+@media (max-width:480px){
+    .cont-card{
+        grid-template-columns: 1fr;
+    }
+    .cont-footer{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .cont-footer div{
+        width: 10%;
+        text-align: center;
+        justify-content: center;
+    }
+
+}
+
+/*
+.cont-card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cont-footer{
+    display: flex;
+    flex-wrap: wrap;
+}*/
